@@ -1,8 +1,104 @@
-﻿<h1 align="center">StellarPulse - Prediction Market on Stellar</h1>
+﻿# StellarPulse
 
-**Predict. Win or Lose — You Always Earn.** Decentralized prediction market on Stellar with near-zero fees and 5-second finality.
+A compact, production-oriented prediction market built on Stellar + Soroban.
+
+StellarPulse is a monorepo containing on-chain smart contracts (Soroban/Rust)
+and a modern Next.js frontend. This repository includes the core contracts,
+front-end app, tests, and deployment helpers so you can run, test, and
+iterate locally or deploy to a network.
+
+Author: WITTIG
 
 ---
+
+## Quick Start
+
+Requirements:
+- Rust + Cargo (stable toolchain)
+- `soroban`/`wasm` toolchain for Soroban contract builds
+- Node.js 18+ and pnpm/npm/yarn
+- Git
+
+Clone and open the repo:
+
+```bash
+git clone https://github.com/Steller-StellarPulse-org/StellarPulse.git
+cd Stellar-iPredict-main
+```
+
+Run the frontend locally:
+
+```bash
+cd frontend
+npm install
+npm run dev
+# then open http://localhost:3000
+```
+
+Build and test contracts (basic):
+
+```bash
+cd contracts
+cargo test --workspace
+```
+
+Run the full test suite (frontend + contracts):
+
+```bash
+# contracts
+cd contracts && cargo test
+# frontend tests
+cd ../frontend && npm run test
+```
+
+---
+
+## Repository Layout
+
+- `contracts/` — Soroban smart contracts written in Rust. Sub-crates include
+  `prediction_market`, `ipredict_token`, `referral_registry`, and `leaderboard`.
+- `frontend/` — Next.js 14 frontend (App Router) with Tailwind CSS and TypeScript.
+- `docs/` — design docs, deployment notes and audit/scope reports.
+- `scripts/` — deployment and helper scripts for testnet/mainnet flows.
+
+---
+
+## Development Notes
+
+- Frontend runs on `http://localhost:3000` by default. Environment config is in
+  `frontend/src/config` and uses simple env variables for RPC endpoints.
+- Contracts are organized as independent crates to enable targeted testing and
+  isolated upgrades.
+- Tests for contracts use standard Rust test harnesses; frontend uses Vitest.
+
+Suggested workflow:
+
+1. Implement or change contract logic in `contracts/<crate>/src`.
+2. Run `cargo test -p <crate>` to validate contract unit tests.
+3. Update or test frontend integration in `frontend/`.
+4. Commit small, focused changes and push a descriptive message.
+
+---
+
+## Contributing
+
+Contributions are welcome. Please open issues for bugs or features, and use
+feature branches for non-trivial changes. Keep commits small and message
+clearly — this repository values readable history.
+
+If you intend to rewrite history or force-push, coordinate with maintainers.
+
+---
+
+## License
+
+This project uses the MIT license. See `LICENSE` for details.
+
+---
+
+If you want a more detailed README (architecture diagrams, example calls,
+deployment steps, or how to interact with the contracts), tell me what to
+include and I will expand this file.
 
 ## Deployed Contracts (Stellar Mainnet)
 
