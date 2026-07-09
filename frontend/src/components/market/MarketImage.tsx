@@ -3,8 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const FALLBACK = "/images/markets/default-market.svg";
-
 interface MarketImageProps {
   src?: string;
   alt: string;
@@ -18,15 +16,16 @@ export default function MarketImage({
   className = "",
   rounded = "all",
 }: MarketImageProps) {
-  const effectiveSrc = src && src.trim().length > 0 ? src : FALLBACK;
-  const [imgSrc, setImgSrc] = useState(effectiveSrc);
+  const initialSrc = src?.trim() ? src : "";
+  const [imgSrc, setImgSrc] = useState(initialSrc);
   const [failed, setFailed] = useState(false);
 
   const roundedClass =
     rounded === "top" ? "rounded-t-2xl" : "rounded-xl";
 
-  // If image loading failed, show a CSS gradient fallback
-  if (failed) {
+  const showImage = Boolean(imgSrc) && !failed;
+
+  if (!showImage) {
     return (
       <div
         className={`relative w-full aspect-video overflow-hidden bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center ${roundedClass} ${className}`}
@@ -62,13 +61,7 @@ export default function MarketImage({
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         className="object-cover"
         loading="lazy"
-        onError={() => {
-          if (imgSrc !== FALLBACK) {
-            setImgSrc(FALLBACK);
-          } else {
-            setFailed(true);
-          }
-        }}
+        onError={() => setFailed(true)}
       />
     </div>
   );

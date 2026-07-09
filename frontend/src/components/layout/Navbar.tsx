@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
 import WalletConnect from "@/components/wallet/WalletConnect";
@@ -45,7 +44,7 @@ export default function Navbar() {
             className="flex items-center gap-3 select-none transition-transform duration-200 hover:scale-105"
             aria-label="Stellar Pulse home"
           >
-            <Image src="/logo.png" alt="Stellar Pulse" width={44} height={44} priority className="rounded-lg" />
+            <span className="text-xl font-bold text-white">SP</span>
             <span className="hidden sm:inline-block text-lg font-semibold text-white text-gradient">Stellar Pulse</span>
           </Link>
 

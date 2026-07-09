@@ -24,18 +24,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_APP_URL || "https://stellarpulse.app"
   ),
-  icons: {
-    icon: [
-      { url: "/logo.png", type: "image/png" },
-      { url: "/favicon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/logo.png",
-  },
   openGraph: {
     title: "Stellar Pulse — Prediction Market on Stellar",
     description:
       "Predict. Win or Lose — You Always Earn. Decentralized prediction market with near-zero fees.",
-    images: ["/logo.png"],
     type: "website",
   },
   twitter: {
@@ -43,7 +35,6 @@ export const metadata: Metadata = {
     title: "Stellar Pulse — Prediction Market on Stellar",
     description:
       "Predict. Win or Lose — You Always Earn. Decentralized prediction market with near-zero fees.",
-    images: ["/logo.png"],
   },
 };
 

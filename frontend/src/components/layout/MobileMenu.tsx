@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FiX } from "react-icons/fi";
 import WalletConnect from "@/components/wallet/WalletConnect";
@@ -57,13 +56,7 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         {/* Close button */}
         <div className="flex items-center justify-between h-16 px-4 border-b border-surface-border">
           <Link href="/" onClick={onClose} aria-label="StellarPulse home" className="select-none">
-            <Image
-              src="/logo.png"
-              alt="StellarPulse"
-              width={36}
-              height={36}
-              className="rounded-lg"
-            />
+            <span className="text-base font-semibold text-white">SP</span>
           </Link>
           <button
             onClick={onClose}

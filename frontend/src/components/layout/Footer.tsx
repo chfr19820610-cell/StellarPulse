@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { FiTwitter, FiGithub, FiMessageCircle } from "react-icons/fi";
 
 const PRODUCT_LINKS = [
@@ -11,7 +10,7 @@ const PRODUCT_LINKS = [
 
 const RESOURCE_LINKS = [
   { href: "https://soroban.stellar.org/docs", label: "Docs", external: true },
-  { href: "https://github.com/your-org/stellar-pulse", label: "GitHub", external: true },
+  { href: "https://github.com/Steller-StellarPulse-org/StellarPulse", label: "GitHub", external: true },
 ];
 
 const LEGAL_LINKS = [
@@ -112,13 +111,7 @@ export default function Footer() {
             className="select-none transition-transform duration-200 hover:scale-105"
             aria-label="StellarPulse home"
           >
-            <Image
-              src="/logo.png"
-              alt="StellarPulse"
-              width={36}
-              height={36}
-              className="rounded-lg"
-            />
+            <span className="text-lg font-bold text-white">StellarPulse</span>
           </Link>
           <p className="text-sm text-slate-600">
             &copy; {new Date().getFullYear()} StellarPulse. Built on Stellar/Soroban.

@@ -1,27 +1,8 @@
-﻿<p align="center">
-  <img src="frontend/public/logo.png" width="96" height="96" alt="StellarPulse logo" />
-</p>
-
-<h1 align="center">StellarPulse - Prediction Market on Stellar</h1>
-
-<p align="center">
-  <a href="https://github.com/AkanEf);/PULSE-stellar/actions"><img src="https://img.shields.io/github/actions/workflow/status/AkanEf);/PULSE-stellar/ci.yml?branch=main&label=CI&logo=github" alt="CI" /></a>
-  <img src="https://img.shields.io/badge/Stellar-Soroban-blue?logo=stellar" alt="Stellar" />
-  <img src="https://img.shields.io/badge/license-MIT-green" alt="License" />
-  <img src="https://img.shields.io/badge/tests-207%20passing-brightgreen" alt="Tests" />
-</p>
+﻿<h1 align="center">StellarPulse - Prediction Market on Stellar</h1>
 
 **Predict. Win or Lose — You Always Earn.** Decentralized prediction market on Stellar with near-zero fees and 5-second finality.
 
 ---
-
-## Live Demo
-
-**Frontend:** [https://stellarpulse.app](https://stellarpulse.app)
-
-## Demo Video
-
-🎬 [Watch Full MVP Flow on Loom](https://www.loom.com/share/bbfa51fde81645eb9ca13eeba82bc695) — *Wallet connect → browse markets → place bet → view leaderboard → claim reward → referral flow*
 
 ## Deployed Contracts (Stellar Mainnet)
 
@@ -79,9 +60,6 @@
 | 29 | `GBX3HFO3J6IPOXPH2BWPWKNSCFNMKGANMFJPBFC3JACIMBJM6UISGNZK` | Referral registration | 5 |
 | 30 | `GASJLRNNMPYN3AIA6MFB6ETRDI5H5C36QRRXLFK62XZUJWGVK4YWNF6R` | Referral registration | 5 |
 | 31 | `GBQI3WD2YKYUWB4MXOO3QP7DPENLV3WD32EHA43VV3US2DCBOWEPV7GW` | Referral registration | 5 |
-
-## Screenshot of Leaderboard with 30+ Pre-Launch Testnet Users
-![Leaderboard of 30+ Users](image_of_30+_testnet_user.png)
 
 *Pre-launch testnet wallets verifiable on [Stellar Expert Testnet Explorer](https://stellar.expert/explorer/testnet). Live mainnet contracts are linked in the Deployed Contracts section above.*
 
@@ -247,7 +225,7 @@ stellarpulse/
 
 ```bash
 # Clone
-git clone https://github.com/Akanimoh12/Stellar-PULSE.git
+git clone https://github.com/Steller-StellarPulse-org/StellarPulse.git
 cd Stellar-PULSE
 
 # Build smart contracts
@@ -413,7 +391,7 @@ See [docs/USER-FEEDBACK.md](docs/USER-FEEDBACK.md) for the full feedback log.
 
 ## Author
 
-Built by **Akan** for the Stellar Build-a-10M-Startup challenge.
+Built by **WITTIG** for the Stellar Build-a-10M-Startup challenge.
 
 - Stellar Admin Wallet: `GDHQ6TNWZ4V2JVCDWEUVW7YKFBXCOQZRRUCT27LAKES3PGOE6JSZMSMD`
 
