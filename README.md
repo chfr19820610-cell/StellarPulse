@@ -23,7 +23,7 @@ Clone and open the repo:
 
 ```bash
 git clone https://github.com/Steller-StellarPulse-org/StellarPulse.git
-cd Stellar-iPredict-main
+cd StellarPulse
 ```
 
 Run the frontend locally:
@@ -58,7 +58,6 @@ cd ../frontend && npm run test
 - `contracts/` — Soroban smart contracts written in Rust. Sub-crates include
   `prediction_market`, `ipredict_token`, `referral_registry`, and `leaderboard`.
 - `frontend/` — Next.js 14 frontend (App Router) with Tailwind CSS and TypeScript.
-- `docs/` — design docs, deployment notes and audit/scope reports.
 - `scripts/` — deployment and helper scripts for testnet/mainnet flows.
 
 ---
@@ -168,7 +167,7 @@ include and I will expand this file.
 ## User Feedback Implementation: Added more filtering and default sorting options to the leaderboard on Active
 |*User Name*| *User Email* | *User Wallet Adddress* | *Commit ID*|
 |----------------------|-------------------------|-------------------------|----------------|
-| best_bettor | `tesinger96@gmail.com` | `GA7GFCGUDLWZ6DIDCNERHA5CI7MATE6NT3MKDVJKFYIM5Y543OTLO3UY` | `77c37784589046eeeb917a9015085dfa6fb26a52` |
+| best_bettor | `malyyen@gmail.com` | `GA7GFCGUDLWZ6DIDCNERHA5CI7MATE6NT3MKDVJKFYIM5Y543OTLO3UY` | `77c37784589046eeeb917a9015085dfa6fb26a52` |
 
 
 ## Advance Feature Added: Fee Sponsorship, Gasless Transactions
@@ -298,11 +297,6 @@ stellarpulse/
 │   │   └── types/                  # TypeScript interfaces
 │   ├── __tests__/                  # 9 test suites (137 tests)
 │   └── .env.local.example          # Environment template
-├── docs/
-│   ├── ARCHITECTURE.md
-│   ├── DEPLOYMENT-GUIDE.md
-│   ├── USER-FEEDBACK.md
-│   └── ITERATION-LOG.md
 └── README.md
 ```
 
@@ -322,7 +316,7 @@ stellarpulse/
 ```bash
 # Clone
 git clone https://github.com/Steller-StellarPulse-org/StellarPulse.git
-cd Stellar-PULSE
+cd StellarPulse
 
 # Build smart contracts
 cd contracts
